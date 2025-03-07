@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "address": "123 Main St",
+    "price": 1000,
+    "rooms": 2,
+    "sq_meters": 60,
+    "floor": 1,
+    "coordinates": [34.780, 32.080]
+  },
+  {
+    "id": 2,
+    "address": "456 Side St",
+    "price": 2000,
+    "rooms": 3,
+    "sq_meters": 80,
+    "floor": 2,
+    "coordinates": [34.782, 32.082]
+  }
+]
