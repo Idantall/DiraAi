@@ -1,0 +1,131 @@
+/* FilterBar.css */
+
+/* Position the bar absolutely over the map (or relative to parent).
+   Typically, you might place it near the top-left corner. */
+.filter-bar-modern {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    background: #fff;
+    padding: 6px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    z-index: 1000; /* Ensure it sits above the map. */
+    font-family: sans-serif;
+}
+
+/* Each filter item is like a “pill” */
+.filter-item {
+    position: relative;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+    /* Hover effect for the filter pill */
+    .filter-item:hover {
+        background: #f0f0f0;
+    }
+
+/* The pop-up container */
+.filter-popup {
+    position: absolute;
+    top: 50px; /* Place it below the pill */
+    left: 0;
+    width: 220px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 16px;
+    z-index: 9999; /* On top of everything else */
+}
+
+    /* Title in the popup */
+    .filter-popup h4 {
+        margin: 0 0 10px;
+        font-size: 14px;
+        color: #333;
+    }
+
+/* Range group with numeric input + range slider side by side */
+.range-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.range-input {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+    /* Make numeric inputs narrower */
+    .range-input input[type="number"] {
+        width: 60px;
+    }
+
+/* Basic styling for sliders */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    cursor: pointer;
+}
+
+    /* Track */
+    input[type="range"]::-webkit-slider-runnable-track {
+        height: 4px;
+        background: #ddd;
+        border-radius: 2px;
+    }
+
+    input[type="range"]::-moz-range-track {
+        height: 4px;
+        background: #ddd;
+        border-radius: 2px;
+    }
+
+    /* Thumb */
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 16px;
+        width: 16px;
+        margin-top: -6px; /* center on track */
+        background: #007aff; /* or your brand color */
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid #fff;
+        box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    }
+
+    input[type="range"]::-moz-range-thumb {
+        height: 16px;
+        width: 16px;
+        background: #007aff;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid #fff;
+        box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    }
+
+/* The apply button inside the pop-up */
+.apply-btn {
+    display: inline-block;
+    background: #007aff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+    .apply-btn:hover {
+        background: #005bb5;
+    }

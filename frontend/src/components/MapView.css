@@ -1,0 +1,36 @@
+/* src/components/MapView.css */
+
+/* Dark mode popup */
+.dark-mapbox-popup .mapboxgl-popup-content {
+    background-color: #1a202c !important; /* Chakra's gray.800 */
+    color: white !important;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.dark-mapbox-popup .mapboxgl-popup-tip {
+    border-top-color: #1a202c !important;
+}
+
+/* Light mode popup */
+.light-mapbox-popup .mapboxgl-popup-content {
+    background-color: white !important;
+    color: black !important;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.light-mapbox-popup .mapboxgl-popup-tip {
+    border-top-color: white !important;
+}
+
+/* Sample marker styling for reference if needed
+.map-marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+*/

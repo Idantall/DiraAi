@@ -3,9 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "concurrently \"cd backend && node app.js\" \"cd frontend && npm start\""
+    "start": "concurrently \"cd backend && node basicneeds.js\" \"cd frontend && SET NODE_OPTIONS=--openssl-legacy-provider && npm start\""
   },
   "devDependencies": {
     "concurrently": "^7.0.0"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.2.4",
+    "@chakra-ui/react": "^2.9.3",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "framer-motion": "^10.16.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-lorem-ipsum": "^1.4.10"
   }
 }

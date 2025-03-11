@@ -1,0 +1,25 @@
+/* src/components/ChatButton.css */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 90px;
+    height: 90px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #333, #555); /* Black-gray gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10000; /* Ensure it's above the map and other elements */
+}
+
+    .chat-button img {
+        width: 80px;
+        height: 80px;
+        object-fit: scale-down;
+        border-radius: 50%;
+    }

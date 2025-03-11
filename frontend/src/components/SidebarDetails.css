@@ -1,0 +1,24 @@
+/* src/components/SidebarDetails.css */
+.sidebar-details {
+    position: absolute;
+    top: 50px; /* Offset equal to header height */
+    right: 0;
+    width: 300px;
+    height: calc(100% - 50px); /* Fill remaining space */
+    background: #fff;
+    z-index: 9998; /* Below header (if header has a higher z-index) but above map */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    overflow-y: auto;
+    font-family: sans-serif;
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
